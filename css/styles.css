@@ -69,40 +69,38 @@ nav h1 a {
   text-transform: uppercase;
   padding-left: 10px;
 }
-nav h1 a:hover, nav h1 a:focus {
+nav h1 a:hover,
+nav h1 a:focus {
   text-decoration: underline;
 }
 #breadcrumb {
-    padding: 10px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 1.2em;
-    margin: 0;
-    width: calc(100% - 20px);;
+  padding: 10px;
+  list-style: none;
+  background-color: #eee;
+  font-size: 1.2em;
+  margin: 0;
+  width: calc(100% - 20px);
 }
-
 /* Display list items side by side */
 #breadcrumb li {
-    display: inline;
+  display: inline;
 }
-
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
-
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+  color: #0275d8;
+  text-decoration: none;
 }
-
 /* Add a color on mouse-over */
-#breadcrumb li a:hover, #breadcrumb li a:focus{
-    color: #01447e;
-    text-decoration: underline;
+#breadcrumb li a:hover,
+#breadcrumb li a:focus{
+  color: #01447e;
+  text-decoration: underline;
 }
 /* ====================== Map ====================== */
 #map {
@@ -192,7 +190,8 @@ nav h1 a:hover, nav h1 a:focus {
   text-decoration: none;
   text-transform: uppercase;
 }
-#restaurants-list li a:hover, #restaurants-list li a:focus {
+#restaurants-list li a:hover,
+#restaurants-list li a:focus {
   background-color: #252831;
 }
 
@@ -206,7 +205,6 @@ nav h1 a:hover, nav h1 a:focus {
   /*width: 100%;*/
   padding: 0;
 }
-
 .inside #map {
   background-color: #ccc;
   height: 100%;
@@ -228,6 +226,7 @@ nav h1 a:hover, nav h1 a:focus {
 #restaurant-address {
   font-size: 1.2em;
   margin: 10px 0px;
+  padding-left: 10px;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -240,7 +239,8 @@ nav h1 a:hover, nav h1 a:focus {
   text-align: center;
   text-transform: uppercase;
 }
-#restaurant-container, #reviews-container {
+#restaurant-container,
+#reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 0 0 20px 0;
@@ -278,19 +278,17 @@ nav h1 a:hover, nav h1 a:focus {
 #restaurant-hours td {
   color: #666;
 }
-
 .skip-link {
-    display: block;
-    position: absolute;
-    top: 15px;
-    left: -1000px;
-    background-color: white;
-    padding: 5px 10px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -1200px;
+  background-color: white;
+  padding: 5px 10px;
 }
 .skip-link:focus {
-    left: 15px;
+  left: 15px;
 }
-
 @media only screen and (min-width: 1px) and (max-width: 680px) {
   #restaurants-list {
     padding: 0;
@@ -303,26 +301,22 @@ nav h1 a:hover, nav h1 a:focus {
     padding: 0 0 10px 0;
   }
 }
-
 @media only screen and (min-width: 681px) and (max-width: 920px) {
   #restaurants-list li {
       width: calc(50% - 2px);
       border: 1px solid #252831;  
   }
 }
-
 @media only screen and (min-width: 921px) {
   #restaurants-list li {
     width: calc(33.33% - 2px);
     border: 1px solid #252831; 
     border-bottom: none;
   }
-
   #restaurants-list li:nth-child(3n+2) {
     border-left: none;
     border-right: none;
   }
-
   .inside #map-container {
     background: blue none repeat scroll 0 0;
     height: 427px;
@@ -332,22 +326,19 @@ nav h1 a:hover, nav h1 a:focus {
     width: 46%;
     padding: 0;
   }
-
   #restaurant-container, #reviews-container {
     width: 50%;
   }
-
   #restaurant-img, #restaurant-hours {
       padding-left: 10px;
   }
-
   #restaurant-cuisine {
     margin: 10px;
     padding: 2px 18px 2px 2px;
     width: calc(100% - 20px);
   }
-
   #restaurant-address {
     margin: 10px;
+    padding-left: 0;
   }
 }
