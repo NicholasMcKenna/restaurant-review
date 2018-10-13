@@ -1,4 +1,4 @@
-var staticCacheName = 'restaurant-v2';
+const staticCacheName = 'restaurant-v2';
 
 /* install service worker and cache files */
 self.addEventListener('install', function(event) {
