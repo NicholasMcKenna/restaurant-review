@@ -84,7 +84,7 @@ initMap = () => {
 				maxZoom: 18,
 				attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 							 '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-						 	'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+						 	 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 				id: 'mapbox.streets'
 			}).addTo(newMap);
 		} catch(error) {
@@ -170,7 +170,7 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
